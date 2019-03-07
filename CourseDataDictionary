@@ -1,0 +1,35 @@
+Data Dictionary
+
+Courses (second-level headings)
+* term:  shows the semester and year of that course offered (Text)
+* crn: course id number (Integer)
+* catalog_id: catalog course id number (Text)
+* section: assigned class section id (Text)
+* credits: number of credits for a class (Float)
+* title: title of the course offered (Text)
+* meetings: list with a dictionary of days, time, dates, and location of the course
+* timecodes: list of meetings without dictionary
+* primary_instructor: course instructor (Text)
+* cap: limit of students that can take the course (Integer)
+* act: actual number of students enrolled in the course (Integer)
+* rem: difference beween the cap and act (Integer)
+
+Coursemeetings (second-level heading)
+* term:  shows the semester and year of that course offered (Text)
+* crn: course id number (Integer)
+* location: classroom location (Text, first letters refer to the building, numbers following are the classroom)
+* day: day of the course meeting (Text - one letter)
+* start: start date, day, time of course (year-month-day-hour)
+* end: end date, day, time of course (year-month-day-hour)
+
+CourseCatalog (second-level heading)
+* program_code:
+* program_name:
+* catalog_id: catalog course id number (Text)
+* course_title: title of the course offered (Text)
+* credits: number of credits for a class (Float)
+* prereqs: any courses required to take before this course (Text)
+* coreqs:
+* fees: any additional fees required to take the course (Text)
+* attributes:
+* description: short description of the course and course requirements (Text)
